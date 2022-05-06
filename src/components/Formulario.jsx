@@ -1,9 +1,12 @@
 import { Formik, Form, Field } from 'formik'
 import * as Yup from 'yup'
+import { useNavigate } from 'react-router-dom'
 
 import Alerta from './Alerta'
 
 const Formulario = () => {
+
+  const navigate = useNavigate()
 
   const nuevoClienteScheme = Yup.object().shape({
     nombre: Yup.string()
@@ -35,6 +38,7 @@ const Formulario = () => {
       
       console.log(resultado)
 
+      navigate('/clientes')
     } catch (error) {
       console.log(error)
     }

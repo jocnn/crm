@@ -7,6 +7,14 @@
       "telefono": "34355345345",
       "notas": "notas de empresa",
       "id": 1
+    },
+    {
+      "nombre": "pepito",
+      "empresa": "pepito corporation",
+      "email": "pepito@pepito.com",
+      "telefono": "43531511345",
+      "notas": "notas de pepito coorporation",
+      "id": 2
     }
   ]
 }
