@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 import Alerta from './Alerta'
 
-const Formulario = () => {
+const Formulario = ({cliente}) => {
 
   const navigate = useNavigate()
 
@@ -52,12 +52,13 @@ const Formulario = () => {
       </h1>
       <Formik
         initialValues={{
-          nombre: '',
-          empresa: '',
-          email: '',
-          telefono: '',
-          notas: ''
+          nombre: cliente?.nombre ?? "",
+          empresa: cliente?.empresa ?? "",
+          email: cliente?.email ?? "",
+          telefono: cliente?.telefono ?? "",
+          notas: cliente?.notas ?? ""
         }}
+        enableReinitialize={true}
         onSubmit={ async (values, {resetForm}) => {
           await handleSubmit(values)
           resetForm()
@@ -150,6 +151,10 @@ const Formulario = () => {
       </Formik>
     </div>
   )
+}
+
+Formulario.defaultProps = {
+  cliente: {}
 }
 
 export default Formulario
