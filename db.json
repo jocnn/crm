@@ -1,28 +1,12 @@
 {
   "clientes": [
     {
-      "nombre": "jose",
-      "empresa": "empresa",
-      "email": "email@email.com",
-      "telefono": "34355345345",
-      "notas": "notas de empresa",
-      "id": 1
-    },
-    {
       "nombre": "pepito",
       "empresa": "pepito corporation",
       "email": "pepito@pepito.com",
       "telefono": "43531511345",
       "notas": "notas de pepito coorporation",
       "id": 2
-    },
-    {
-      "nombre": "boby update",
-      "empresa": "boby coorporation update",
-      "email": "boby@boby.com",
-      "telefono": "3245344513451354",
-      "notas": "notas de boby coorporation",
-      "id": 3
     }
   ]
 }
