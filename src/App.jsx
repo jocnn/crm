@@ -6,8 +6,7 @@ import EditarCliente from './pages/EditarCliente'
 import VerCliente from './pages/VerCliente'
 
 function App() {
-
-  console.log(import.meta.env)
+  // console.log(import.meta.env)
 
   return (
     <BrowserRouter>

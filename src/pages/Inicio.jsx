@@ -23,7 +23,7 @@ const Inicio = () => {
   }, [])
 
   const handleEliminar = async id => {
-    console.log('eliminando', id)
+    // console.log('eliminando', id)
     const confirmar = confirm('¿Esta seguro que desea eliminar este cliente?')
 
     if (confirmar) {
